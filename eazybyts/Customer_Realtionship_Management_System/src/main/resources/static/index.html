@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM System</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Customer Relationship Management System</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#contacts">Contacts</a></li>
+            <li><a href="#sales">Sales</a></li>
+            <li><a href="#tasks">Tasks</a></li>
+            <li><a href="#support">Support</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="contacts">
+            <h2>Contact Management</h2>
+            <form id="contact-form">
+                <label for="contact-name">Name:</label>
+                <input type="text" id="contact-name" name="name">
+                <label for="contact-email">Email:</label>
+                <input type="email" id="contact-email" name="email">
+                <button type="submit">Add Contact</button>
+            </form>
+            <div id="contacts-list"></div>
+        </section>
+        <section id="sales">
+            <h2>Sales Pipeline</h2>
+            <form id="sales-form">
+                <label for="sales-deal">Deal Name:</label>
+                <input type="text" id="sales-deal" name="deal">
+                <label for="sales-amount">Amount:</label>
+                <input type="number" id="sales-amount" name="amount">
+                <button type="submit">Add Deal</button>
+            </form>
+            <div id="sales-list"></div>
+        </section>
+        <section id="tasks">
+            <h2>Task Management</h2>
+            <form id="task-form">
+                <label for="task-name">Task:</label>
+                <input type="text" id="task-name" name="task">
+                <label for="task-deadline">Deadline:</label>
+                <input type="date" id="task-deadline" name="deadline">
+                <button type="submit">Add Task</button>
+            </form>
+            <div id="tasks-list"></div>
+        </section>
+        <section id="support">
+            <h2>Customer Support</h2>
+            <form id="support-form">
+                <label for="support-ticket">Issue:</label>
+                <textarea id="support-ticket" name="issue"></textarea>
+                <button type="submit">Submit Ticket</button>
+            </form>
+            <div id="support-tickets-list"></div>
+        </section>
+    </main>
+    <script src="/js/scripts.js"></script>
+</body>
+</html>
